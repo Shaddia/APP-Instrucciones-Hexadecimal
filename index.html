@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="./source/hextomips.js"></script>
+    <script src="./source/helpers.js"></script>
+    <script src="./source/static_data.js"></script>
+    <script src="./source/mipstohex.js"></script>
+    <title>Convertidor Mips</title>
+</head>
+<body>
+    <header>
+        <div id="logo-div"><img id="logo" src="./imgs/un_logo.png" alt="Logo uninorte"></div>
+        <div id="title"><h1>Convertidor mips</h1></div>
+    </header>
+    <main>
+        <div class="wrapper">
+            <section class="converter">
+                <h2>Instruccion &rarr; Hexadecimal</h2>
+                <input type="text" name="inst" id="inst" placeholder="Instruccion">
+                <p id="Ihelper">Ej: add t1 t2 t3</p>
+                <input type="submit" class="conv" value="Convertir" onclick="itohex()">
+            </section>
+            <section class="converter">
+                <h2>Hexadecimal &rarr; Instruccion</h2>
+                <input type="text" name="hex" id="hex" placeholder="Hex">
+                <p id="Hexhelper">Ej: 0x014B4820</p>
+                <input type="submit" class="conv" value="Convertir" onclick="hextoi()">
+            </section>
+        </div>
+        <section class="result">
+            <h2 id="res_title">Resultado</h2>
+            <hr>
+            <p id="res_msg"></p>
+        </section>
+    </main>
+    <footer>
+        <p>Desarrollado por: <a href="">@</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,115 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    width: 100%;
+    height: 18%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #B9B4C7;
+    padding-bottom: 1rem;
+}
+
+#title{
+    font-size: 1.5em;
+    font-weight: bold;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo{
+    width: 100%;
+    height: 100%;
+}
+
+#logo-div{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 100%;
+    height: 73%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.converter{
+    border-radius: 5%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #5C5470;
+    color: white;
+}
+
+.conv{
+    background-color: #B9B4C7;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.conv:hover{
+    background-color: #B9B4C7;
+    opacity: 0.9;
+    color: #FAF0E6;
+}
+
+.result{
+    background-color: #5C5470;
+    color: white;
+    padding: 1rem;
+    border-radius: 5%;
+}
+
+footer{
+    width: 100%;
+    height: 5%;
+}
